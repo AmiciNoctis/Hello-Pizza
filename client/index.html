@@ -7,30 +7,30 @@
   <title>Hello Pizza</title>
 </head>
 
-<body id="body">
+<body>
   <header>
     <div id="banner">
       <h1><img src="/client/img/logo-helloPizza.png" alt="Hello Pizza"></h1>
       <nav>
         <ul class="menu-itens">
-          <li><a href="home.html">Home</a></li>
-          <li><a href="sabores.html">Sabores</a></li>
-          <li><a href="contatos.html">Contatos</a></li>
+          <li><a href="#banner">Home</a></li>
+          <li><a href="#sabores">Sabores</a></li>
+          <li><a href="#formulário">Contatos</a></li>
         </ul>
       </nav>
     </div>
   </header> 
 
-  <main id="main">
-    <div id="vantagens">
+  <main>
+    <section id="vantagens">
       <ul>
         <li>Qualidade</li>
         <li>Sabor</li>
         <li>Praticidade</li>
         <li>Agilidade</li>
       </ul>
-    </div>   
-    <section id="sabores">
+    </section>   
+    <div id="sabores">
       <h2>Conheça nossos sabores</h2>
       <table>
        <tr>
@@ -78,32 +78,28 @@
         <td class="texto-negativo">Não</td>
        </tr>
       </table>
-    </section>
-    <section id="formulário">
+    </div>
+    <div id="formulário">
       <h2>Contato</h2>
-      <form action="validar_login.php" method="POST">
+      <form action="http://arquivo.devmedia.com.br/projeto/requisicao.php" method="POST" target="_blank">
         <div id="form">
-          <label for="">Nome</label>
-          <input type="text" name="nome">
-
-          <label for="">Email</label>
-          <input type="email" name="email">
-
-          <label for="">Mensagem</label>
-          <textarea name="mensagem" id="" placeholder=" Digite aqui sua mensagem"></textarea>
+          <label for="">Nome:</label>
+          <input type="text" placeholder="Digite seu nome" name="nome">
+          <label for="">E-mail:</label>
+          <input type="email" placeholder="Digite seu e-mail" name="email">
+          <label for="">Mensagem:</label>
+          <textarea name="mensagem" id="" placeholder="Digite aqui sua mensagem"></textarea>
           <br>
           <input type="submit" value="enviar">
         </div>
       </form>
-    </section>
+    </div>
   </main>
-  <div id="copyright">
-    <footer>
-      <a href="" id="logo-hellopizza">
-        <img src="/client/img/logo-helloPizza.png" alt="">
-      </a>
-      <p>Todos os direitos reservados © 2020</p>
-    </footer>
-  </div>
+  <footer>
+    <a href="" id="logo-hellopizza">
+      <img src="/client/img/logo-helloPizza.png" alt="Hello Pizza!">
+    </a>
+    <p>Todos os direitos reservados © 2020</p>
+  </footer>
 </body>
 </html>

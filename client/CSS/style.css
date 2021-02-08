@@ -1,4 +1,4 @@
-#body {
+body {
 	background-color: #131313;
 	background-image: url(../img/background-pizza.png);
 	background-repeat: no-repeat;
@@ -40,32 +40,25 @@
 	text-align: center;
 }
 
-@media screen and (min-width:
-1024px) {
- #main { min-width: 1000px; }
-}
-
-#vantagens {
-	padding-top: 50px;
-	position: relative;
+#vantagens ul {
+    list-style: none;
+    margin: 50px 0 252px 0;
 }
 
 #vantagens ul li {
-	color: #fff;
-	font-family: "Helvetica", sans-serif;
-	font-size: 35px;
-	
+    font-family: 'Reenie Beanie', cursive;
+    color: #fff;
+    font-size: 2em;
+    margin: 5px;
 }
 
-#vantagens li::marker {
-	content: "\00b0";
-	color: #fbcb39;
-}
-
-
-#sabores {
-	padding-bottom: 60px;
-	margin-top: 270px;
+#vantagens ul li::before {
+  content: "\00b0 ";
+  color: #fbcb39;
+  font-family: sans-serif;
+  font-size: 1em;
+  vertical-align: bottom;
+  margin: 25px 10px 0 10px;
 }
 
 #sabores h2 {
@@ -75,15 +68,15 @@
 	font-family: "Helvetica", sans-serif;
 	line-height: 2;
 	text-shadow: 4px 4px 20px #060606;
-	background-color: rgba(3,	 3, 3, 0.5);
+	background-color: rgba(3, 3, 3, 0);
 }
 
 #sabores table {
 	border-collapse: collapse;
-	margin: 0 auto;
-	width:80%;
+	margin-bottom: 50px;
+	width:95%;
 	background-color: #333;
-	padding: 0;
+	padding: 0px;
 }
 
 #sabores table td,
@@ -105,17 +98,17 @@
 	color: #87b50f;
 }
 
-#copyright {
+footer {
 	padding: 20px 0px 10px 0px;
 	background-color: #060606;
 }
 
-#copyright a {
+footer a {
 	display: block;
 	text-align: center;
 }
 
-#copyright p {
+footer p {
 	color: #fff;
 	text-align: center;
 	font-family: "Helvetica", sans-serif;
@@ -123,7 +116,7 @@
 
 #formulário {
 	text-align: center;
-	padding: 10px;
+	padding: 30px 72px 0 72px;
 }
 
 #formulário h2 {
@@ -139,30 +132,30 @@
 	border-radius: 20px;
 }
 
-#formulário form label {
+form label {
 	font-family: "Helvetica", sans-serif;
-	color: #fff;	
-}
-
-#form label {
+	color: #fff;
+	margin:15px 0;
 	display: block;
+	text-transform: uppercase;
 }
 
-#form input, form textarea{
+#form input, textarea{
 	border: 1px solid #7a7a7a;
 	border-radius: 20px;
+	padding: 25px 25px;
 }
 
 #form input[type="submit"] {
 	width: 30%px;
 	height: 40px;
     margin: 25px 0;
+	padding: 0px;
 	font-size: 20px;
 	text-align: center;
 	font-weight: bold;
 	font-family: sans-serif;
-	color: #fff;
-	background-color: black;
+	color: rgb(255, 255, 255);
 	background-color: rgba(0, 0, 0, 0);
 }
 
@@ -171,11 +164,13 @@
 	width: 30%;
 	background-color: rgba(0, 0, 0, 0);
 	color: #fff;
-	font-size: 18px;
+	font-size: 16px;
 	padding: 10px;
 }
 
 #form label {
+	margin:15px 0px;
+	display: block;
 	line-height: 40px;
 	color: #fff;
 	text-transform: uppercase;
@@ -188,7 +183,7 @@
 	width: 30%;
 	background-color: rgba(0, 0, 0, 0);
 	color: #fff;
-	font-size: 14px;
+	font-size: 16px;
 	text-align: initial;
 }
 
