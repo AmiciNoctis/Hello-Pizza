@@ -126,13 +126,13 @@ body {
 	border-radius: 20px;
 }
 
-#form input, textarea{
+form input, form textarea{
 	border: 1px solid #7a7a7a;
 	border-radius: 20px;
 	padding: 25px 25px;
 }
 
-#form input[type="submit"] {
+form input[type="submit"] {
 	height: 40px;
 	width: 296px;
     margin: 25px 0;
@@ -145,7 +145,7 @@ body {
 	background-color: rgba(0, 0, 0, 0);
 }
 
-#form input {
+form input {
 	width: 396px;
 	height: 30px;
 	background-color: rgba(0, 0, 0, 0);
@@ -154,7 +154,7 @@ body {
 	padding: 10px;
 }
 
-#form label {
+form label {
 	margin: 0 16%;
 	display: block;
 	line-height: 40px;
@@ -165,7 +165,7 @@ body {
     width: 255px;
 }
 
-#form textarea {
+form textarea {
 	padding: 10px;
 	height: 200px;
 	width: 396px;

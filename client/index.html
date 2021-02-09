@@ -3,13 +3,13 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, user-scalable=yes">
-  <link rel="stylesheet" href="/client/CSS/style.css">
+  <link rel="stylesheet" href="../client/CSS/style.css">
   <title>Hello Pizza</title>
 </head>
 <body>
   <header>
-    <div id="banner">
-      <h1><img src="/client/img/logo-helloPizza.png" alt="Hello Pizza"></h1>
+    <section id="banner">
+      <h1><img src="../client/img/logo-helloPizza.png" alt="Hello Pizza"></h1>
       <nav>
         <ul class="menu-itens">
           <li><a href="#banner">Home</a></li>
@@ -17,7 +17,7 @@
           <li><a href="#formulário">Contatos</a></li>
         </ul>
       </nav>
-    </div>
+    </section>
   </header> 
   <main>
     <section id="vantagens">
@@ -28,7 +28,7 @@
         <li>Agilidade</li>
       </ul>
     </section>   
-    <div id="sabores">
+    <section id="sabores">
       <h2>Conheça nossos sabores</h2>
       <table>
        <tr>
@@ -76,11 +76,10 @@
         <td class="texto-negativo">Não</td>
        </tr>
       </table>
-    </div>
-    <div id="formulário">
+    </section>
+    <section id="formulário">
       <h2>Contato</h2>
       <form action="http://arquivo.devmedia.com.br/projeto/requisicao.php" method="POST" target="_blank">
-        <div id="form">
           <label for="">Nome:</label>
           <input type="text" placeholder="Digite seu nome" name="nome" required>
           <label for="">E-mail:</label>
@@ -89,13 +88,12 @@
           <textarea name="mensagem" id="" placeholder="Digite aqui sua mensagem" required></textarea>
           <br>
           <input type="submit" value="enviar">
-        </div>
       </form>
-    </div>
+    </section>
   </main>
   <footer>
     <a href="" id="logo-hellopizza">
-      <img src="/client/img/logo-helloPizza.png" alt="Hello Pizza!">
+      <img src="../client/img/logo-helloPizza.png" alt="Hello Pizza!">
     </a>
     <p>Todos os direitos reservados © 2020</p>
   </footer>
