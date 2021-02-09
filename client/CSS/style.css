@@ -1,3 +1,8 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+
 body {
 	background-color: #131313;
 	background-image: url(../img/background-pizza.png);
@@ -61,6 +66,10 @@ body {
   margin: 25px 10px 0 10px;
 }
 
+#sabores {
+	padding: 30px 72px 0 72px;
+}
+
 #sabores h2 {
 	color: #fff;
 	text-transform: uppercase;
@@ -74,7 +83,7 @@ body {
 #sabores table {
 	border-collapse: collapse;
 	margin-bottom: 50px;
-	width:95%;
+	width:100%;
 	background-color: #333;
 	padding: 0px;
 }
@@ -98,46 +107,23 @@ body {
 	color: #87b50f;
 }
 
-footer {
-	padding: 20px 0px 10px 0px;
-	background-color: #060606;
-}
-
-footer a {
-	display: block;
-	text-align: center;
-}
-
-footer p {
-	color: #fff;
-	text-align: center;
-	font-family: "Helvetica", sans-serif;
-}
-
 #formulário {
 	text-align: center;
-	padding: 30px 72px 0 72px;
+	padding: 0 72px 0 72px;
+	margin: 0px 25%;
 }
 
 #formulário h2 {
 	color: #fff;
 	text-transform: uppercase;
 	text-align: center;
-	font-family: "Helvetica", sans-serif;	
-	margin: 0 auto;
+	font-family: "Helvetica", sans-serif;
 	line-height: 2;
+	margin: auto;
 	text-shadow: 4px 4px 20px #060606;
 	width: 150px;
 	background-color: rgba(3, 3, 3, 0.5);
 	border-radius: 20px;
-}
-
-form label {
-	font-family: "Helvetica", sans-serif;
-	color: #fff;
-	margin:15px 0;
-	display: block;
-	text-transform: uppercase;
 }
 
 #form input, textarea{
@@ -147,8 +133,8 @@ form label {
 }
 
 #form input[type="submit"] {
-	width: 30%px;
 	height: 40px;
+	width: 296px;
     margin: 25px 0;
 	padding: 0px;
 	font-size: 20px;
@@ -160,8 +146,8 @@ form label {
 }
 
 #form input {
+	width: 396px;
 	height: 30px;
-	width: 30%;
 	background-color: rgba(0, 0, 0, 0);
 	color: #fff;
 	font-size: 16px;
@@ -169,21 +155,41 @@ form label {
 }
 
 #form label {
-	margin:15px 0px;
+	margin: 0 16%;
 	display: block;
 	line-height: 40px;
 	color: #fff;
 	text-transform: uppercase;
 	font-family: "Helvetica", sans-serif;
+	text-align: left;
+    width: 255px;
 }
 
 #form textarea {
 	padding: 10px;
 	height: 200px;
-	width: 30%;
+	width: 396px;
 	background-color: rgba(0, 0, 0, 0);
 	color: #fff;
 	font-size: 16px;
 	text-align: initial;
 }
 
+footer {
+	padding: 20px 0px 10px 0px;
+	background-color: #060606;
+}
+
+footer a {
+	width: 304px;
+    background-size: 304px 72px;
+    background-repeat: no-repeat;
+    display: block;
+    margin: 0px auto;
+}
+
+footer p {
+	color: #fff;
+	text-align: center;
+	font-family: "Helvetica", sans-serif;
+}
