@@ -3,18 +3,20 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, user-scalable=yes">
-  <link rel="stylesheet" href="../client/CSS/style.css">
+  <link rel="stylesheet" href="CSS/style.css">
+
   <title>Hello Pizza</title>
 </head>
 <body>
   <header>
     <section id="banner">
-      <h1><img src="../client/img/logo-helloPizza.png" alt="Hello Pizza"></h1>
+      <h1><img src="img/logo-helloPizza.png" alt="Hello Pizza"></h1>
       <nav>
         <ul class="menu-itens">
           <li><a href="#banner">Home</a></li>
           <li><a href="#sabores">Sabores</a></li>
-          <li><a href="#formulário">Contatos</a></li>
+          <li><a href="#menu-pedidos">Pedidos</a></li>
+          <li><a href="#contato">Contatos</a></li>
         </ul>
       </nav>
     </section>
@@ -77,23 +79,104 @@
        </tr>
       </table>
     </section>
-    <section id="formulário">
+    <div id="conteiner">
+      <div id="menu-pedidos">
+        <h2>Pedido</h2>
+        <form action="http://arquivo.devmedia.com.br/projeto/requisicao.php" method="POST" target="_blank">
+          <table>
+            <thead>
+              <tr>
+                <th>Sabor</th>
+                <th>Quantidade</th>
+                <th>Preço por uni.</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Mozzarella</td>
+                <td>
+                  <a class="btn-decrementa">-</a>
+                  <input type="number" name="mozzarella" class="quantidade" max="9" value="0">
+                  <a class="btn-incrementa">+</a>
+                </td>
+                <td>R$ 13,50</td>
+              </tr>
+              <tr>
+                <td>Calabresa</td>
+                <td>
+                  <a class="btn-decrementa">-</a>
+                  <input type="number" name="calabresa" class="quantidade" max="9" value="0">
+                  <a class="btn-incrementa">+</a>
+                </td>
+                <td>R$ 15,00</td>
+              </tr>
+              <tr>
+                <td>Pepperoni</td>
+                <td>
+                  <a class="btn-decrementa">-</a>
+                  <input type="number" name="pepperoni" class="quantidade" max="9" value="0">
+                  <a class="btn-incrementa">+</a>
+                </td>
+                <td>R$ 15,00</td>
+              </tr>
+              <tr>
+                <td>Marguerita</td>
+                <td>
+                  <a class="btn-decrementa">-</a>
+                  <input type="number" name="marguerita" class="quantidade" max="9" value="0">
+                  <a class="btn-incrementa">+</a>
+                </td>
+                <td>R$ 13,50</td>
+              </tr>
+              <tr>
+                <td>Portuguesa</td>
+                <td>
+                  <a class="btn-decrementa">-</a>
+                  <input type="number" name="portuguesa" class="quantidade" max="9" value="0">
+                  <a class="btn-incrementa">+</a>
+                </td>
+                <td>R$ 15,00</td>
+              </tr>
+              <tr>
+                <td>Alho</td>
+                <td>
+                  <a class="btn-decrementa">-</a>
+                  <input type="number" name="alho" class="quantidade" max="9" value="0">
+                  <a class="btn-incrementa">+</a>
+                </td>
+                <td>R$ 12,00</td>
+              </tr>
+            </tbody>
+            <tfoot>
+              <tr>
+                <td colspan="2">Total</td>
+                <td id="total">0</td>
+              </tr>
+            </tfoot>
+          </table>
+          <input type="submit" value="enviar">
+        </form>
+
       <h2>Contato</h2>
-      <form action="http://arquivo.devmedia.com.br/projeto/requisicao.php" method="POST" target="_blank">
-          <label for="">Nome:</label>
+      <form id="contato" action="http://arquivo.devmedia.com.br/projeto/requisicao.php" method="POST" target="_blank">
+          <label for="nome">Nome:</label>
           <input type="text" placeholder="Digite seu nome" name="nome" required>
-          <label for="">E-mail:</label>
+
+          <label for="email">E-mail:</label>
           <input type="email" placeholder="Digite seu e-mail" name="email" required>
-          <label for="">Mensagem:</label>
+
+          <label for="mensagem">Mensagem:</label>
           <textarea name="mensagem" id="" placeholder="Digite aqui sua mensagem" required></textarea>
+
           <br>
           <input type="submit" value="enviar">
       </form>
-    </section>
+      </div>
+    </div>
   </main>
   <footer>
     <a href="" id="logo-hellopizza">
-      <img src="../client/img/logo-helloPizza.png" alt="Hello Pizza!">
+      <img src="img/logo-helloPizza.png" alt="Hello Pizza!">
     </a>
     <p>Todos os direitos reservados © 2020</p>
   </footer>

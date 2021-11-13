@@ -107,19 +107,21 @@ body {
 	color: #87b50f;
 }
 
-#formulário {
+#conteiner {
 	text-align: center;
 	padding: 0 72px 0 72px;
-	margin: 0px 25%;
+
 }
 
-#formulário h2 {
+div h2 {
 	color: #fff;
 	text-transform: uppercase;
 	text-align: center;
 	font-family: "Helvetica", sans-serif;
 	line-height: 2;
 	margin: auto;
+	margin-top: 10px;
+	margin-bottom: 10px;
 	text-shadow: 4px 4px 20px #060606;
 	width: 150px;
 	background-color: rgba(3, 3, 3, 0.5);
@@ -145,7 +147,33 @@ form input[type="submit"] {
 	background-color: rgba(0, 0, 0, 0);
 }
 
-form input {
+#menu-pedidos form table a:first-child{
+	padding: 4px 8.5px;
+}
+
+#menu-pedidos form table a {
+	cursor: pointer;
+	border: 1.3px solid #fff;
+	padding: 4px 7px;
+	border-radius: 50%;
+}
+
+#menu-pedidos form table th, td {
+	text-align: center;
+	padding: 25px;
+	width: 20%;
+}
+
+#menu-pedidos form table input {
+	text-align: center;
+	border: none;
+	display: inline;
+	width: 30px;
+	padding: 5px 0px;
+	margin-left: 15px;
+}
+
+form input {	
 	width: 396px;
 	height: 30px;
 	background-color: rgba(0, 0, 0, 0);
@@ -155,14 +183,12 @@ form input {
 }
 
 form label {
-	margin: 0 16%;
 	display: block;
 	line-height: 40px;
 	color: #fff;
 	text-transform: uppercase;
 	font-family: "Helvetica", sans-serif;
-	text-align: left;
-    width: 255px;
+	margin-right: 300px;
 }
 
 form textarea {
@@ -173,6 +199,25 @@ form textarea {
 	color: #fff;
 	font-size: 16px;
 	text-align: initial;
+}
+
+#menu-pedidos table {
+	border-collapse: collapse;
+	margin-bottom: 50px;
+	width: 50%;
+	height: 50%;
+	background-color: #333;
+	border-radius: 20px;
+	margin: 0 25%;
+}
+
+div table td,
+div table th {
+	color: #fff;
+	text-transform: uppercase;
+	font-family: "Helvetica", sans-serif;
+	padding: 15px;
+	font-size: 12px;
 }
 
 footer {
